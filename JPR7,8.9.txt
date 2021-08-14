@@ -1,0 +1,92 @@
+Que no 7 :Consider the following code snippet.
+
+int i = 10;
+int n = i++%5;
+    What are the values of i and n after the code is executed?
+    What are the final values of i and n if instead of using the
+ postfix increment operator (i++), you use the prefix version (++i))?
+
+Answer - 1) The value of i is 11 and n is 0
+Answer - 2) The value of i is 11 and n is 1
+
+Que no 8 : Change the following program to use compound assignments:
+
+class ArithmeticDemo {
+
+     public static void main (String[] args){
+          
+          int result = 1 + 2; // result is now 3
+          System.out.println(result);
+
+          result = result - 1; // result is now 2
+          System.out.println(result);
+result = result * 2; // result is now 4
+          System.out.println(result);
+
+          result = result / 2; // result is now 2
+          System.out.println(result);
+
+          result = result + 8; // result is now 10
+          result = result % 7; // result is now 3
+          System.out.println(result);
+     }
+}
+ 
+Answer : class ArithmeticDemo {
+
+    public static void main (String[] args){
+        int result = 3;
+        System.out.println(result);
+
+        result -= 1; // result is now 2
+        System.out.println(result);
+
+        result *= 2; // result is now 4
+        System.out.println(result);
+
+        result /= 2; // result is now 2
+        System.out.println(result);
+
+        result += 8; // result is now 10
+        result %= 7; // result is now 3
+        System.out.println(result);
+
+    }
+}
+
+Que no 9: In the following program, explain why the 
+value "6" is printed twice in a row:
+
+class PrePostDemo {
+    public static void main(String[] args){
+        int i = 3;
+        i++;
+        System.out.println(i);    // "4"
+        ++i;                     
+        System.out.println(i);    // "5"
+        System.out.println(++i);  // "6"
+        System.out.println(i++);  // "6"
+        System.out.println(i);    // "7"
+    }
+}
+
+Answer: The code prints 6 twice because the prefix evaluates to incemented value. The next 
+line postfix evaluates to current value and then increments by one. 
+
+10) Identify the following kinds of expression statements:
+
+    aValue = 8933.234;
+    aValue++;
+    System.out.println("Hello World!");
+    Bicycle myBike = new Bicycle();
+
+Answer: 
+     aValue = 8933.234; // Here this is a assignment statement which assigns the value to 
+  the variable
+    aValue++; // Here this is a incremental statement which we to inrement the value by 1
+    System.out.println("Hello World!"); // This is a method invocation statement which is used 
+to print the output
+    Bicycle myBike = new Bicycle(); // This is a Object creation statement in which we have 
+created an object
+
+
